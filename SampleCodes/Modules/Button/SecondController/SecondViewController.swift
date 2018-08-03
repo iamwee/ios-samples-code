@@ -1,18 +1,19 @@
 //
-//  BaseViewController.swift
+//  SecondViewController.swift
 //  SampleCodes
 //
-//  Created by Wathin Sonnukij on 2/8/2561 BE.
+//  Created by Wathin Sonnukij on 3/8/2561 BE.
 //  Copyright © 2561 Wathin Sonnukij. All rights reserved.
 //
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class SecondViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
+        setupNagivationTitle(title: "Second Controller")
+        setupNavigationBackButton()
 
         // Do any additional setup after loading the view.
     }
@@ -20,27 +21,6 @@ class BaseViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    private func setupNavigationBar() {
-        // Do something with navigation
-    }
-    
-    func setupNagivationTitle(title: String) {
-        self.navigationItem.title = title
-    }
-    
-    func setupNavigationBackButton() {
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "arrow_back"),
-            style: UIBarButtonItemStyle.plain,
-            target: self,
-            action: #selector(popNavigation)
-        )
-    }
-    
-    @objc private func popNavigation() {
-        self.navigationController?.popViewController(animated: true)
     }
     
 

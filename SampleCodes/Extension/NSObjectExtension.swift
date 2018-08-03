@@ -9,11 +9,8 @@
 import UIKit
 
 extension NSObject {
-    var className: String {
-        return String(describing: type(of: self))
-    }
     
-    static var className: String {
+    static var identifier: String {
         return String(describing: self)
     }
 }

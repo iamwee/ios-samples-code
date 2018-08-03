@@ -1,18 +1,17 @@
 //
-//  BaseViewController.swift
+//  ResultViewController.swift
 //  SampleCodes
 //
-//  Created by Wathin Sonnukij on 2/8/2561 BE.
+//  Created by Wathin Sonnukij on 3/8/2561 BE.
 //  Copyright © 2561 Wathin Sonnukij. All rights reserved.
 //
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
 
         // Do any additional setup after loading the view.
     }
@@ -22,28 +21,10 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func setupNavigationBar() {
-        // Do something with navigation
+    @IBAction func buttonDidClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    func setupNagivationTitle(title: String) {
-        self.navigationItem.title = title
-    }
-    
-    func setupNavigationBackButton() {
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "arrow_back"),
-            style: UIBarButtonItemStyle.plain,
-            target: self,
-            action: #selector(popNavigation)
-        )
-    }
-    
-    @objc private func popNavigation() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-
     /*
     // MARK: - Navigation
 

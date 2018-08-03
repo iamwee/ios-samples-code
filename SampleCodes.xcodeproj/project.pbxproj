@@ -23,6 +23,14 @@
 		7B157C3921130917002E7D1A /* ViewSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B157C3721130917002E7D1A /* ViewSampleController.xib */; };
 		7B157C3D211311A1002E7D1A /* StackViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B157C3B211311A1002E7D1A /* StackViewSampleController.swift */; };
 		7B157C3E211311A1002E7D1A /* StackViewSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B157C3C211311A1002E7D1A /* StackViewSampleController.xib */; };
+		7B157C42211319BD002E7D1A /* LabelSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B157C40211319BD002E7D1A /* LabelSampleViewController.swift */; };
+		7B157C43211319BD002E7D1A /* LabelSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B157C41211319BD002E7D1A /* LabelSampleViewController.xib */; };
+		7B157C4721140346002E7D1A /* ButtonSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B157C4521140346002E7D1A /* ButtonSampleViewController.swift */; };
+		7B157C4821140346002E7D1A /* ButtonSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B157C4621140346002E7D1A /* ButtonSampleViewController.xib */; };
+		7B157C4C211413D4002E7D1A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B157C4A211413D4002E7D1A /* SecondViewController.swift */; };
+		7B157C4D211413D4002E7D1A /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B157C4B211413D4002E7D1A /* SecondViewController.xib */; };
+		7B157C532114146D002E7D1A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B157C512114146D002E7D1A /* ResultViewController.swift */; };
+		7B157C542114146D002E7D1A /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B157C522114146D002E7D1A /* ResultViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +52,14 @@
 		7B157C3721130917002E7D1A /* ViewSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewSampleController.xib; sourceTree = "<group>"; };
 		7B157C3B211311A1002E7D1A /* StackViewSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewSampleController.swift; sourceTree = "<group>"; };
 		7B157C3C211311A1002E7D1A /* StackViewSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StackViewSampleController.xib; sourceTree = "<group>"; };
+		7B157C40211319BD002E7D1A /* LabelSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSampleViewController.swift; sourceTree = "<group>"; };
+		7B157C41211319BD002E7D1A /* LabelSampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelSampleViewController.xib; sourceTree = "<group>"; };
+		7B157C4521140346002E7D1A /* ButtonSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSampleViewController.swift; sourceTree = "<group>"; };
+		7B157C4621140346002E7D1A /* ButtonSampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonSampleViewController.xib; sourceTree = "<group>"; };
+		7B157C4A211413D4002E7D1A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7B157C4B211413D4002E7D1A /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		7B157C512114146D002E7D1A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		7B157C522114146D002E7D1A /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +108,8 @@
 		7B157C152112E2C4002E7D1A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7B157C442114032B002E7D1A /* Button */,
+				7B157C3F211319A8002E7D1A /* Label */,
 				7B157C3A2113117C002E7D1A /* StackView */,
 				7B157C302113087D002E7D1A /* AutoLayout */,
 				7B157C1A2112E2EB002E7D1A /* Main */,
@@ -153,6 +171,44 @@
 			path = StackView;
 			sourceTree = "<group>";
 		};
+		7B157C3F211319A8002E7D1A /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				7B157C40211319BD002E7D1A /* LabelSampleViewController.swift */,
+				7B157C41211319BD002E7D1A /* LabelSampleViewController.xib */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		7B157C442114032B002E7D1A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				7B157C4E21141425002E7D1A /* ResultController */,
+				7B157C49211413B8002E7D1A /* SecondController */,
+				7B157C4521140346002E7D1A /* ButtonSampleViewController.swift */,
+				7B157C4621140346002E7D1A /* ButtonSampleViewController.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		7B157C49211413B8002E7D1A /* SecondController */ = {
+			isa = PBXGroup;
+			children = (
+				7B157C4A211413D4002E7D1A /* SecondViewController.swift */,
+				7B157C4B211413D4002E7D1A /* SecondViewController.xib */,
+			);
+			path = SecondController;
+			sourceTree = "<group>";
+		};
+		7B157C4E21141425002E7D1A /* ResultController */ = {
+			isa = PBXGroup;
+			children = (
+				7B157C512114146D002E7D1A /* ResultViewController.swift */,
+				7B157C522114146D002E7D1A /* ResultViewController.xib */,
+			);
+			path = ResultController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,12 +268,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B157C0E2112E28F002E7D1A /* LaunchScreen.storyboard in Resources */,
+				7B157C4821140346002E7D1A /* ButtonSampleViewController.xib in Resources */,
 				7B157C0B2112E28F002E7D1A /* Assets.xcassets in Resources */,
 				7B157C092112E28E002E7D1A /* Main.storyboard in Resources */,
+				7B157C542114146D002E7D1A /* ResultViewController.xib in Resources */,
+				7B157C4D211413D4002E7D1A /* SecondViewController.xib in Resources */,
 				7B157C3E211311A1002E7D1A /* StackViewSampleController.xib in Resources */,
 				7B157C2F2113031D002E7D1A /* MenuTableViewCell.xib in Resources */,
 				7B157C3921130917002E7D1A /* ViewSampleController.xib in Resources */,
 				7B157C192112E2E3002E7D1A /* MainViewController.xib in Resources */,
+				7B157C43211319BD002E7D1A /* LabelSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B157C532114146D002E7D1A /* ResultViewController.swift in Sources */,
+				7B157C4C211413D4002E7D1A /* SecondViewController.swift in Sources */,
 				7B157C1D2112E3D5002E7D1A /* NSObjectExtension.swift in Sources */,
+				7B157C42211319BD002E7D1A /* LabelSampleViewController.swift in Sources */,
 				7B157C182112E2E3002E7D1A /* MainViewController.swift in Sources */,
 				7B157C3D211311A1002E7D1A /* StackViewSampleController.swift in Sources */,
 				7B157C2E2113031D002E7D1A /* MenuTableViewCell.swift in Sources */,
+				7B157C4721140346002E7D1A /* ButtonSampleViewController.swift in Sources */,
 				7B157C062112E28E002E7D1A /* ViewController.swift in Sources */,
 				7B157C042112E28E002E7D1A /* AppDelegate.swift in Sources */,
 				7B157C1F2112E706002E7D1A /* UIViewController.swift in Sources */,

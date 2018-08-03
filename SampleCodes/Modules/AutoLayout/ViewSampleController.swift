@@ -12,8 +12,8 @@ class ViewSampleController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNagivationTitle(title: "Auto Layout")
-        setupBackNavigationButton()
+        setupNagivationTitle(title: "Auto Layout")
+        setupNavigationBackButton()
 
         // Do any additional setup after loading the view.
     }
