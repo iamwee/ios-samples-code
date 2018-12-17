@@ -37,6 +37,7 @@ class MainViewController: BaseViewController {
         menus.append("StackView")
         menus.append("Label")
         menus.append("Button")
+        menus.append("TextField")
         menus.append("Collection View")
     }
     
@@ -67,6 +68,7 @@ extension MainViewController: UITableViewDelegate {
         case 1: self.navigationController?.pushViewController(StackViewSampleController(), animated: true); break
         case 2: self.navigationController?.pushViewController(LabelSampleViewController(), animated: true); break
         case 3: self.navigationController?.pushViewController(ButtonSampleViewController(), animated: true); break
+        case 4: self.navigationController?.pushViewController(TextFieldSampleViewController(), animated: true); break
         default: break
             
         }

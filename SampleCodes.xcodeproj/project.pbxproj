@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A35DA1421C78C1300B61EB4 /* TextFieldSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35DA1221C78C1300B61EB4 /* TextFieldSampleViewController.swift */; };
+		2A35DA1521C78C1300B61EB4 /* TextFieldSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A35DA1321C78C1300B61EB4 /* TextFieldSampleViewController.xib */; };
+		2A35DA1921C795CE00B61EB4 /* WelcomeTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35DA1721C795CE00B61EB4 /* WelcomeTextFieldViewController.swift */; };
+		2A35DA1A21C795CE00B61EB4 /* WelcomeTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A35DA1821C795CE00B61EB4 /* WelcomeTextFieldViewController.xib */; };
 		7B157C042112E28E002E7D1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B157C032112E28E002E7D1A /* AppDelegate.swift */; };
 		7B157C062112E28E002E7D1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B157C052112E28E002E7D1A /* ViewController.swift */; };
 		7B157C092112E28E002E7D1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B157C072112E28E002E7D1A /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A35DA1221C78C1300B61EB4 /* TextFieldSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSampleViewController.swift; sourceTree = "<group>"; };
+		2A35DA1321C78C1300B61EB4 /* TextFieldSampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldSampleViewController.xib; sourceTree = "<group>"; };
+		2A35DA1721C795CE00B61EB4 /* WelcomeTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTextFieldViewController.swift; sourceTree = "<group>"; };
+		2A35DA1821C795CE00B61EB4 /* WelcomeTextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeTextFieldViewController.xib; sourceTree = "<group>"; };
 		7B157C002112E28E002E7D1A /* SampleCodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B157C032112E28E002E7D1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B157C052112E28E002E7D1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +81,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A35DA1121C78BE200B61EB4 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				2A35DA1621C795AA00B61EB4 /* WelcomeTextField */,
+				2A35DA1221C78C1300B61EB4 /* TextFieldSampleViewController.swift */,
+				2A35DA1321C78C1300B61EB4 /* TextFieldSampleViewController.xib */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		2A35DA1621C795AA00B61EB4 /* WelcomeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				2A35DA1721C795CE00B61EB4 /* WelcomeTextFieldViewController.swift */,
+				2A35DA1821C795CE00B61EB4 /* WelcomeTextFieldViewController.xib */,
+			);
+			path = WelcomeTextField;
+			sourceTree = "<group>";
+		};
 		7B157BF72112E28E002E7D1A = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +135,7 @@
 		7B157C152112E2C4002E7D1A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2A35DA1121C78BE200B61EB4 /* TextField */,
 				7B157C442114032B002E7D1A /* Button */,
 				7B157C3F211319A8002E7D1A /* Label */,
 				7B157C3A2113117C002E7D1A /* StackView */,
@@ -267,7 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A35DA1521C78C1300B61EB4 /* TextFieldSampleViewController.xib in Resources */,
 				7B157C0E2112E28F002E7D1A /* LaunchScreen.storyboard in Resources */,
+				2A35DA1A21C795CE00B61EB4 /* WelcomeTextFieldViewController.xib in Resources */,
 				7B157C4821140346002E7D1A /* ButtonSampleViewController.xib in Resources */,
 				7B157C0B2112E28F002E7D1A /* Assets.xcassets in Resources */,
 				7B157C092112E28E002E7D1A /* Main.storyboard in Resources */,
@@ -290,10 +320,12 @@
 			files = (
 				7B157C532114146D002E7D1A /* ResultViewController.swift in Sources */,
 				7B157C4C211413D4002E7D1A /* SecondViewController.swift in Sources */,
+				2A35DA1421C78C1300B61EB4 /* TextFieldSampleViewController.swift in Sources */,
 				7B157C1D2112E3D5002E7D1A /* NSObjectExtension.swift in Sources */,
 				7B157C42211319BD002E7D1A /* LabelSampleViewController.swift in Sources */,
 				7B157C182112E2E3002E7D1A /* MainViewController.swift in Sources */,
 				7B157C3D211311A1002E7D1A /* StackViewSampleController.swift in Sources */,
+				2A35DA1921C795CE00B61EB4 /* WelcomeTextFieldViewController.swift in Sources */,
 				7B157C2E2113031D002E7D1A /* MenuTableViewCell.swift in Sources */,
 				7B157C4721140346002E7D1A /* ButtonSampleViewController.swift in Sources */,
 				7B157C062112E28E002E7D1A /* ViewController.swift in Sources */,
