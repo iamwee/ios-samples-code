@@ -70,7 +70,6 @@ extension MainViewController: UITableViewDelegate {
         case 3: self.navigationController?.pushViewController(ButtonSampleViewController(), animated: true); break
         case 4: self.navigationController?.pushViewController(TextFieldSampleViewController(), animated: true); break
         default: break
-            
         }
     }
 }
