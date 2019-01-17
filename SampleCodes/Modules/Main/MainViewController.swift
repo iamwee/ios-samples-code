@@ -38,7 +38,7 @@ class MainViewController: BaseViewController {
         menus.append("Label")
         menus.append("Button")
         menus.append("TextField")
-        menus.append("Collection View")
+        menus.append("Networking")
     }
     
 }
@@ -69,6 +69,7 @@ extension MainViewController: UITableViewDelegate {
         case 2: self.navigationController?.pushViewController(LabelSampleViewController(), animated: true); break
         case 3: self.navigationController?.pushViewController(ButtonSampleViewController(), animated: true); break
         case 4: self.navigationController?.pushViewController(TextFieldSampleViewController(), animated: true); break
+        case 5: self.navigationController?.pushViewController(NetworkingViewController(), animated: true); break
         default: break
         }
     }
