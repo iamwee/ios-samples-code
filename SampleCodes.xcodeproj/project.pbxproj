@@ -12,6 +12,8 @@
 		2A35DA1921C795CE00B61EB4 /* WelcomeTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35DA1721C795CE00B61EB4 /* WelcomeTextFieldViewController.swift */; };
 		2A35DA1A21C795CE00B61EB4 /* WelcomeTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A35DA1821C795CE00B61EB4 /* WelcomeTextFieldViewController.xib */; };
 		2A35DA1C21C8A7EE00B61EB4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35DA1B21C8A7EE00B61EB4 /* UIColorExtension.swift */; };
+		2A5B055D21F09F5D00E1CB6C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B055B21F09F5D00E1CB6C /* TableViewController.swift */; };
+		2A5B055E21F09F5D00E1CB6C /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5B055C21F09F5D00E1CB6C /* TableViewController.xib */; };
 		2AA8296221EF4973001CA8EB /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA8296021EF4973001CA8EB /* PostDetailViewController.swift */; };
 		2AA8296321EF4973001CA8EB /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA8296121EF4973001CA8EB /* PostDetailViewController.xib */; };
 		2AB69DDF21EF0E2700480FAF /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB69DDD21EF0E2700480FAF /* PostTableViewCell.swift */; };
@@ -54,6 +56,8 @@
 		2A35DA1721C795CE00B61EB4 /* WelcomeTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTextFieldViewController.swift; sourceTree = "<group>"; };
 		2A35DA1821C795CE00B61EB4 /* WelcomeTextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeTextFieldViewController.xib; sourceTree = "<group>"; };
 		2A35DA1B21C8A7EE00B61EB4 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2A5B055B21F09F5D00E1CB6C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2A5B055C21F09F5D00E1CB6C /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		2AA8296021EF4973001CA8EB /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		2AA8296121EF4973001CA8EB /* PostDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
 		2AB69DDD21EF0E2700480FAF /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +127,15 @@
 				2A35DA1821C795CE00B61EB4 /* WelcomeTextFieldViewController.xib */,
 			);
 			path = WelcomeTextField;
+			sourceTree = "<group>";
+		};
+		2A5B055A21F09F3800E1CB6C /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B055B21F09F5D00E1CB6C /* TableViewController.swift */,
+				2A5B055C21F09F5D00E1CB6C /* TableViewController.xib */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		2AA8295F21EF4957001CA8EB /* Post Detail */ = {
@@ -216,6 +229,7 @@
 		7B157C152112E2C4002E7D1A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2A5B055A21F09F3800E1CB6C /* TableView */,
 				2AE5935521DE050400D684AA /* Networking */,
 				2A35DA1121C78BE200B61EB4 /* TextField */,
 				7B157C442114032B002E7D1A /* Button */,
@@ -406,6 +420,7 @@
 				7B157C3921130917002E7D1A /* ViewSampleController.xib in Resources */,
 				7B157C192112E2E3002E7D1A /* MainViewController.xib in Resources */,
 				7B157C43211319BD002E7D1A /* LabelSampleViewController.xib in Resources */,
+				2A5B055E21F09F5D00E1CB6C /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5B055D21F09F5D00E1CB6C /* TableViewController.swift in Sources */,
 				7B157C532114146D002E7D1A /* ResultViewController.swift in Sources */,
 				2AE5935821DE052900D684AA /* NetworkingViewController.swift in Sources */,
 				2AE5936521DF59AB00D684AA /* BackendError.swift in Sources */,
