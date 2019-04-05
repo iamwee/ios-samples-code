@@ -12,8 +12,8 @@ class StackViewSampleController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNagivationTitle(title: "Stack View")
-        setupBackNavigationButton()
+        setupNagivationTitle(title: "Stack View")
+        setupNavigationBackButton()
 
         // Do any additional setup after loading the view.
     }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonSampleViewController" customModule="SampleCodes" customModuleProvider="target">
+            <connections>
+                <outlet property="labelCount" destination="FBv-qZ-pbg" id="cdh-C7-lwG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXm-Wm-esq">
+                    <rect key="frame" x="152" y="72" width="70.5" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pc-HQ-LpV">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <state key="normal" title="-"/>
+                            <connections>
+                                <action selector="buttonDecrementDidClicked:" destination="-1" eventType="touchUpInside" id="hge-M6-rNa"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBv-qZ-pbg">
+                            <rect key="frame" x="30" y="0.0" width="10.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzv-TP-Tv8">
+                            <rect key="frame" x="40.5" y="0.0" width="30" height="30"/>
+                            <state key="normal" title="+"/>
+                            <connections>
+                                <action selector="buttonIncrementDidClicked:" destination="-1" eventType="touchUpInside" id="14X-sk-j0w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPX-OZ-4Nu">
+                    <rect key="frame" x="126" y="126" width="122" height="30"/>
+                    <state key="normal" title="Show Alert Dialog"/>
+                    <connections>
+                        <action selector="buttonShowAlertDialogDidClicked:" destination="-1" eventType="touchUpInside" id="5TH-gH-LIQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0Z-Gn-gWW">
+                    <rect key="frame" x="108" y="180" width="158" height="30"/>
+                    <state key="normal" title="Present ViewController"/>
+                    <connections>
+                        <action selector="buttonPresentControllerDidClicked:" destination="-1" eventType="touchUpInside" id="8sk-Xf-fSQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHp-Kc-64k">
+                    <rect key="frame" x="118" y="234" width="139" height="30"/>
+                    <state key="normal" title="Push ViewController"/>
+                    <connections>
+                        <action selector="bottonPushControllerDidClicked:" destination="-1" eventType="touchUpInside" id="oJp-lu-GB0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-k9-hYe">
+                    <rect key="frame" x="156.5" y="36" width="62" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IjP-k9-hYe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="229-ws-jT0"/>
+                <constraint firstItem="wHp-Kc-64k" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="9Go-6D-iEL"/>
+                <constraint firstItem="jXm-Wm-esq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KXf-Tj-Lxc"/>
+                <constraint firstItem="K0Z-Gn-gWW" firstAttribute="top" secondItem="RPX-OZ-4Nu" secondAttribute="bottom" constant="24" id="PIH-Q8-NhZ"/>
+                <constraint firstItem="RPX-OZ-4Nu" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="e5L-Pt-4cn"/>
+                <constraint firstItem="jXm-Wm-esq" firstAttribute="top" secondItem="IjP-k9-hYe" secondAttribute="bottom" constant="16" id="iOm-pS-2eF"/>
+                <constraint firstItem="IjP-k9-hYe" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="kF9-hP-tmo"/>
+                <constraint firstItem="wHp-Kc-64k" firstAttribute="top" secondItem="K0Z-Gn-gWW" secondAttribute="bottom" constant="24" id="ndx-MI-BQV"/>
+                <constraint firstItem="RPX-OZ-4Nu" firstAttribute="top" secondItem="7Pc-HQ-LpV" secondAttribute="bottom" constant="24" id="uh3-wx-JVh"/>
+                <constraint firstItem="K0Z-Gn-gWW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yGR-cb-uRr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldSampleViewController" customModule="SampleCodes" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="64B-As-spV" id="cGi-oJ-MFx"/>
+                <outlet property="nameTextField" destination="zEg-bU-5hR" id="pEt-qd-4n3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEg-bU-5hR">
+                    <rect key="frame" x="16" y="60" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2i-sl-UVm">
+                    <rect key="frame" x="163" y="106" width="49" height="30"/>
+                    <state key="normal" title="Submit"/>
+                    <connections>
+                        <action selector="submitDidClicked:" destination="-1" eventType="touchUpInside" id="HyE-cN-yO1"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter some message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mM6-1z-5pX">
+                    <rect key="frame" x="16" y="156" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="messageTextFieldDidChange:" destination="-1" eventType="editingChanged" id="tv2-bk-SIR"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64B-As-spV">
+                    <rect key="frame" x="16" y="216" width="343" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j2i-sl-UVm" firstAttribute="top" secondItem="zEg-bU-5hR" secondAttribute="bottom" constant="16" id="1oP-w6-RXM"/>
+                <constraint firstItem="mM6-1z-5pX" firstAttribute="top" secondItem="j2i-sl-UVm" secondAttribute="bottom" constant="20" id="FhD-35-ToA"/>
+                <constraint firstItem="j2i-sl-UVm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Fhf-dE-a15"/>
+                <constraint firstItem="zEg-bU-5hR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Jal-Y1-R3W"/>
+                <constraint firstItem="zEg-bU-5hR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="M4k-52-0Mc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="64B-As-spV" secondAttribute="trailing" constant="16" id="OTY-pj-ZLZ"/>
+                <constraint firstItem="mM6-1z-5pX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="V3U-BG-eOk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zEg-bU-5hR" secondAttribute="trailing" constant="16" id="boJ-pP-rUo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mM6-1z-5pX" secondAttribute="trailing" constant="16" id="cOy-Fq-Cru"/>
+                <constraint firstItem="64B-As-spV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pE0-Yw-0u3"/>
+                <constraint firstItem="64B-As-spV" firstAttribute="top" secondItem="mM6-1z-5pX" secondAttribute="bottom" constant="30" id="yUG-TG-BV2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Jkh-RW-HRZ">
+            <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <nil key="textColor"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits"/>
+        </textField>
+    </objects>
+</document>

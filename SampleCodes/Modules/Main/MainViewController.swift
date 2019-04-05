@@ -13,7 +13,7 @@ class MainViewController: BaseViewController {
     private var menus: [String] = []
     @IBOutlet weak var tableView: UITableView! {
         didSet {
-            tableView.register(UINib(nibName: MenuTableViewCell.className, bundle: nil), forCellReuseIdentifier: MenuTableViewCell.className)
+            tableView.register(UINib(nibName: MenuTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: MenuTableViewCell.identifier)
             tableView.dataSource = self
             tableView.delegate = self
             tableView.tableFooterView = UIView(frame: .zero)
@@ -22,8 +22,8 @@ class MainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initView()
-        setNagivationTitle(title: "Sample Code")
+        initMenuData()
+        setupNagivationTitle(title: "Sample Code")
         
     }
     
@@ -32,12 +32,14 @@ class MainViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func initView() {
+    private func initMenuData() {
         menus.append("Auto Layout")
         menus.append("StackView")
         menus.append("Label")
         menus.append("Button")
-        menus.append("Collection View")
+        menus.append("TextField")
+        menus.append("Networking")
+        menus.append("Table View")
     }
     
 }
@@ -53,8 +55,9 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MenuTableViewCell.className) as! MenuTableViewCell
-        cell.title?.text =  menus[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: MenuTableViewCell.identifier) as! MenuTableViewCell
+        let menu = menus[indexPath.row]
+        cell.title?.text = menu
         return cell 
     }
 }
@@ -64,8 +67,12 @@ extension MainViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0: self.navigationController?.pushViewController(ViewSampleController(), animated: true); break
         case 1: self.navigationController?.pushViewController(StackViewSampleController(), animated: true); break
+        case 2: self.navigationController?.pushViewController(LabelSampleViewController(), animated: true); break
+        case 3: self.navigationController?.pushViewController(ButtonSampleViewController(), animated: true); break
+        case 4: self.navigationController?.pushViewController(TextFieldSampleViewController(), animated: true); break
+        case 5: self.navigationController?.pushViewController(NetworkingViewController(), animated: true); break
+        case 6: self.navigationController?.pushViewController(TableViewController(), animated: true); break
         default: break
-            
         }
     }
 }

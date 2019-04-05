@@ -1,18 +1,18 @@
 //
-//  ViewSampleController.swift
+//  SecondViewController.swift
 //  SampleCodes
 //
-//  Created by Wathin Sonnukij on 2/8/2561 BE.
+//  Created by Wathin Sonnukij on 3/8/2561 BE.
 //  Copyright © 2561 Wathin Sonnukij. All rights reserved.
 //
 
 import UIKit
 
-class ViewSampleController: BaseViewController {
+class SecondViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNagivationTitle(title: "Auto Layout")
+        setupNagivationTitle(title: "Second Controller")
         setupNavigationBackButton()
 
         // Do any additional setup after loading the view.

@@ -1,19 +1,17 @@
 //
-//  ViewSampleController.swift
+//  ResultViewController.swift
 //  SampleCodes
 //
-//  Created by Wathin Sonnukij on 2/8/2561 BE.
+//  Created by Wathin Sonnukij on 3/8/2561 BE.
 //  Copyright © 2561 Wathin Sonnukij. All rights reserved.
 //
 
 import UIKit
 
-class ViewSampleController: BaseViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNagivationTitle(title: "Auto Layout")
-        setupNavigationBackButton()
 
         // Do any additional setup after loading the view.
     }
@@ -23,7 +21,10 @@ class ViewSampleController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func buttonDidClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

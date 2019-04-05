@@ -1,5 +1,5 @@
 //
-//  ViewSampleController.swift
+//  LabelSampleViewController.swift
 //  SampleCodes
 //
 //  Created by Wathin Sonnukij on 2/8/2561 BE.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewSampleController: BaseViewController {
+class LabelSampleViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNagivationTitle(title: "Auto Layout")
+        setupNagivationTitle(title: "Label")
         setupNavigationBackButton()
 
         // Do any additional setup after loading the view.
